@@ -1,91 +1,22 @@
-install.packages(c("tidycensus", "tidyverse", "R.oo", "readxl"))
+list.of.packages <- c("tidycensus", "tidyverse", "R.oo", "readxl")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
 library(tidyverse)
 library(tidycensus)
 library(R.oo)
 library(readxl)
+source("variable_translations.R")
+source("variables.R")
+source("data_load.R")
+source("helper_functions.R")
 
-# variables
-texas_acs_code <- "48"
-harris_county_acs_code <- "201"
-houston_zip_codes <- c(
-  "77002","77021","77040","77059","77078","77098","77384","77479","77547",
-  "77003","77022","77041","77060","77079","77099","77385","77484","77571",
-  "77004","77023","77042","77061","77080","77204","77386","77489","77573",
-  "77005","77024","77043","77062","77081","77325","77388","77492","77574",
-  "77006","77025","77044","77063","77082","77336","77389","77493","77578",
-  "77007","77026","77045","77064","77083","77338","77396","77494","77581",
-  "77008","77027","77046","77065","77084","77339","77401","77497","77584",
-  "77009","77028","77047","77066","77085","77345","77406","77498","77586",
-  "77010","77029","77048","77067","77086","77346","77407","77502","77587",
-  "77011","77030","77049","77068","77087","77354","77429","77503","77588",
-  "77012","77031","77050","77069","77088","77357","77433","77504","77598",
-  "77013","77032","77051","77070","77089","77365","77447","77505",
-  "77014","77033","77052","77071","77090","77373","77449","77506",
-  "77015","77034","77053","77072","77091","77375","77450","77507",
-  "77016","77035","77054","77073","77092","77377","77459","77520",
-  "77017","77036","77055","77074","77093","77379","77469","77530",
-  "77018","77037","77056","77075","77094","77380","77472","77532",
-  "77019","77038","77057","77076","77095","77381","77477","77536",
-  "77020","77039","77058","77077","77096","77382","77478","77546")
+#load houston
+houston_ages = call_tidycensus("city", "S0101")
+# test <- merge(age_variables, houston_ages, by.x="age_demo_variable_names", by.y = "variable")
+test <- left_join(age_variables, houston_ages, by = c("age_demo_variables" = "variable")) %>%
+  select(-moe, -NAME, -GEOID) %>%
+  group_by(age_demo_variables) %>%
+  mutate(estimate = sum(estimate)) %>%
+  distinct()
 
-## Import data
-tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE)
-current_year = as.integer(format(Sys.Date(), "%Y"))
-latest_year = current_year
-retrieve_census_data <- function(year) {
-  data = data.frame()
-  retrieved_data = FALSE
-  for(i in 0:10) {
-    if(retrieved_data) {break}
-    tryCatch({
-      data <- tidycensus::load_variables(year - i, "acs5/subject", cache = TRUE)
-      print(data)
-      retrieved_data = T
-      latest_year = year-i
-    }, error = function(e) {
-    })
-  }
-  return(data)
-}
-
-data2 <- tidycensus::load_variables(2019, "acs5", cache = TRUE)
-
-census_data <- retrieve_census_data(current_year)
-
-## Load xlsx requirements
-DEVO <- read_xlsx("ACSRequirements.xlsx", 1)
-CNAC <- read_xlsx("ACSRequirements.xlsx", 2)
-Parenting <- read_xlsx("ACSRequirements.xlsx", 3)
-
-call_tidycensus <- function(geo, table) {
-  if(geo == "Texas" || geo == "state") {
-    state <- texas_acs_code
-    geography <- "state"
-    county <- NULL
-    zcta <- NULL
-  } else if(geo == "Harris County" || geo == "county" ) {
-    state <- texas_acs_code
-    geography <- "county"
-    county <- harris_county_acs_code
-    zcta <- NULL
-  } else if(geo == "Houston" || geo == "city") {
-    state <- texas_acs_code
-    geography <- "zcta"
-    county <- NULL
-    zcta <- houston_zip_codes
-  }
-  
-  return(
-  tidycensus::get_acs(
-    geography = geography,
-    state = state,
-    county = county,
-    survey = "acs5",  
-    table = table,
-    zcta = zcta)
-  )
-}
-
-test = call_tidycensus("state", "S0101")
-  
 View(acs)

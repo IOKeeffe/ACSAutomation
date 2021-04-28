@@ -39,4 +39,4 @@ age_demo_variable_names <- c(
   "80 to 84 years"
 )
 
-age_variables <- data.frame(age_demo_variables = age_demo_variables, age_demo_variable_names = age_demo_variable_names)
+age_variables <- data.frame(variable = age_demo_variables, age_demo_variable_names = age_demo_variable_names)

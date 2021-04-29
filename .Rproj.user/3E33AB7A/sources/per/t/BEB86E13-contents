@@ -26,8 +26,14 @@ call_tidycensus <- function(geo, table) {
     survey = "acs5",  
     table = table
     )
-  return(results %>% {
-    if (filter_zip) filter(GEOID %in% houston_zip_codes)})
+  if (filter_zip) {
+    return(results %>% 
+    filter(GEOID %in% houston_zip_codes))
+  }
+  else {
+    return(results)
+  }
+  
 }
 
 retrieve_census_data <- function(year) {
@@ -46,17 +52,17 @@ retrieve_census_data <- function(year) {
   return(data)
 }
 
-add_variable_names <- function(variables, data) {
-  left_join(variables, data, by = c("variable")) %>%
-    select(-moe, -NAME, -GEOID) %>%
+add_variable_names <- function(data) {
+  left_join(data, variable_names, by = c("variable" = "name")) %>%
+    # select(-moe, -NAME, -GEOID) %>%
     group_by(variable) %>%
     mutate(estimate = sum(estimate)) %>%
     distinct()
 }
 
-harris_z_2 <- tidycensus::get_acs(
-   geography = "tract",
-   survey="acs5",
-   table="S0101",
-   state="TX",
-   geometry = TRUE)
+# harris_z_2 <- tidycensus::get_acs(
+#    geography = "tract",
+#    survey="acs5",
+#    table="S0101",
+#    state="TX",
+#    geometry = TRUE)

@@ -1,0 +1,32 @@
+{
+    "id": "EA2B4776",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1619735831428.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "texas_ages",
+        "caption": "texas_ages",
+        "totalObservations": "228",
+        "displayedObservations": "228",
+        "variables": "5",
+        "cacheKey": "FC7AD1A1",
+        "object": "texas_ages",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=texas_ages&cache_key=FC7AD1A1&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7305816492697987193,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1619735831428,
+    "read_only": false,
+    "read_only_alternatives": []
+}

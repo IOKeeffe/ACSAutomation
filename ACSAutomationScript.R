@@ -5,15 +5,11 @@ library(tidyverse)
 library(tidycensus)
 library(readxl)
 
-source("variable_translations.R")
 source("variables.R")
 source("helper_functions.R")
 
 #load census data api and set latest year
-tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE, overwrite = TRUE)
-current_year = as.integer(format(Sys.Date(), "%Y"))
-census_data <- retrieve_census_data(current_year)
-variable_names <- tidycensus::load_variables(latest_year, "acs5/subject", cache = T)
+load_data()
 
 #load ages
 texas_ages_raw = call_tidycensus("state", "S0101")
@@ -29,12 +25,21 @@ houston_population <- houston_ages_raw %>%
   first()
 
 # pull required age variables, combine with data, and return estimates
-ages_with_names <- left_join(texas_ages_raw, variable_names, by = c("variable" = "name"))
+ages_with_names <- add_vars(texas_population)
 age_labels <- ages_with_names[2:19,]$label
 
 texas_ages_cleaned <- clean_data(texas_ages_raw, age_labels)
 harrison_ages_cleaned <- clean_data(harrison_ages_raw, age_labels)
 houston_ages_cleaned <- clean_data(houston_ages_raw, age_labels)
+
+#load poverty
+texas_poverty_raw = call_tidycensus("state", "S1701")
+harrison_poverty_raw = call_tidycensus("county", "S1701")
+houston_poverty_raw = call_tidycensus("city", "S1701")
+
+texas_poverty_cleaned <- clean_data(texas_poverty_raw, poverty_labels)
+harrison_poverty_cleaned <- clean_data(harrison_poverty_raw, poverty_labels)
+houston_poverty_cleaned <- clean_data(houston_poverty_raw, poverty_labels)
 
 
 #load languages
@@ -54,3 +59,14 @@ houston_opp_youth_raw = call_tidycensus("city", "S2301")
 texas_opp_youth_cleaned <- clean_data(texas_opp_youth_raw, opp_youth_labels)
 harrison_opp_youth_cleaned <- clean_data(harrison_opp_youth_raw, opp_youth_labels)
 houston_opp_youth_cleaned <- clean_data(houston_opp_youth_raw, opp_youth_labels)
+
+#load non-traditional households
+texas_household_type_raw = call_tidycensus("state", "DP02")
+harrison_household_type_raw = call_tidycensus("county", "S2301")
+houston_household_type_raw = call_tidycensus("city", "S2301")
+
+view(add_vars(texas_household_type_raw, T))
+
+texas_household_type_cleaned <- clean_data(texas_household_type_raw, household_type_labels, T)
+harrison_household_type_cleaned <- clean_data(harrison_household_type_raw, household_type_labels, T)
+houston_household_type_cleaned <- clean_data(houston_household_type_raw, household_type_labels, T)

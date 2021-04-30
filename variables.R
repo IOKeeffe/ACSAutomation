@@ -23,7 +23,11 @@ houston_zip_codes <- c(
 texas_acs_code <- "48"
 harris_county_acs_code <- "201"
 
-load_geometry <- T
+load_geometry <- F
+
+poverty_labels <- c(
+  "Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years"
+)
 
 language_labels <- c(
   "Estimate!!Total!!Population 5 years and over!!Speak only English",

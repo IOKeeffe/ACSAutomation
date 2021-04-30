@@ -38,7 +38,6 @@ houston_ages_cleaned <- clean_data(houston_ages_raw, age_labels)
 
 
 #load languages
-#load ages
 texas_languages_raw = call_tidycensus("state", "S1601")
 harrison_languages_raw = call_tidycensus("county", "S1601")
 houston_languages_raw = call_tidycensus("city", "S1601")
@@ -48,7 +47,10 @@ harrison_languages_cleaned <- clean_data(harrison_languages_raw, language_labels
 houston_languages_cleaned <- clean_data(houston_languages_raw, language_labels)
 
 #load opportunity youth
-languages <- call_tidycensus("state", "C14005")
-languages <- add_variable_names(languages)
-languages <- languages %>%
-  filter(label %in% language_labels)
+texas_opp_youth_raw = call_tidycensus("state", "S2301")
+harrison_opp_youth_raw = call_tidycensus("county", "S2301")
+houston_opp_youth_raw = call_tidycensus("city", "S2301")
+
+texas_opp_youth_cleaned <- clean_data(texas_opp_youth_raw, opp_youth_labels)
+harrison_opp_youth_cleaned <- clean_data(harrison_opp_youth_raw, opp_youth_labels)
+houston_opp_youth_cleaned <- clean_data(houston_opp_youth_raw, opp_youth_labels)

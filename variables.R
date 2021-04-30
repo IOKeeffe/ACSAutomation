@@ -32,4 +32,9 @@ language_labels <- c(
   "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages",
   "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages"
 )
+
+opp_youth_labels <- c(
+  "Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!16 to 19 years",
+  "Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!20 to 24 years"
+)
 # make geographic info easily available for update (geometry)

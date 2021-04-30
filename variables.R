@@ -26,6 +26,7 @@ harris_county_acs_code <- "201"
 load_geometry <- T
 
 language_labels <- c(
+  "Estimate!!Total!!Population 5 years and over!!Speak only English",
   "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish",
   "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages",
   "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages",

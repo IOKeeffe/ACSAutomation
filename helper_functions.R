@@ -19,6 +19,7 @@ call_tidycensus <- function(geo, table) {
   }
 
   results <- tidycensus::get_acs(
+    geometry = load_geometry,
     geography = geography,
     zcta = zcta,
     state = state,
@@ -52,16 +53,13 @@ retrieve_census_data <- function(year) {
   return(data)
 }
 
-add_variable_names <- function(data) {
+clean_data <- function(data, labels) {
   left_join(data, variable_names, by = c("variable" = "name")) %>%
-    select(-moe, -NAME, -GEOID) %>%
-    group_by(variable) %>%
+    filter(label %in% labels) %>%
+    group_by(label) %>%
     mutate(estimate = sum(estimate)) %>%
+    ungroup() %>%
+    select(estimate, label) %>%
     distinct()
 }
 
-<- left_join(houston_ages, variable_names, by = c("variable" = "name")) %>%
-  select(-moe, -NAME) %>%
-  group_by(variable) %>%
-  mutate(estimate = sum(estimate)) %>%
-  distinct()

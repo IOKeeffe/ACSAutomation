@@ -23,4 +23,12 @@ houston_zip_codes <- c(
 texas_acs_code <- "48"
 harris_county_acs_code <- "201"
 
+load_geometry <- T
+
+language_labels <- c(
+  "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish",
+  "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages",
+  "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages",
+  "Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages"
+)
 # make geographic info easily available for update (geometry)

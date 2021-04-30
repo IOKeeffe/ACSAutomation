@@ -12,7 +12,7 @@ call_tidycensus <- function(geo, table) {
     zcta <- NULL
   } else if(geo == "Houston" || geo == "city") {
     filter_zip <- T
-    state <- texas_acs_code
+    state <- NULL
     geography <- "zcta"
     county <- NULL
     zcta <- houston_zip_codes
@@ -54,15 +54,14 @@ retrieve_census_data <- function(year) {
 
 add_variable_names <- function(data) {
   left_join(data, variable_names, by = c("variable" = "name")) %>%
-    # select(-moe, -NAME, -GEOID) %>%
+    select(-moe, -NAME, -GEOID) %>%
     group_by(variable) %>%
     mutate(estimate = sum(estimate)) %>%
     distinct()
 }
 
-# harris_z_2 <- tidycensus::get_acs(
-#    geography = "tract",
-#    survey="acs5",
-#    table="S0101",
-#    state="TX",
-#    geometry = TRUE)
+<- left_join(houston_ages, variable_names, by = c("variable" = "name")) %>%
+  select(-moe, -NAME) %>%
+  group_by(variable) %>%
+  mutate(estimate = sum(estimate)) %>%
+  distinct()

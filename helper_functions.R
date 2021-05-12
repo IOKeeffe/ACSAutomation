@@ -55,17 +55,29 @@ retrieve_census_data <- function(year) {
 }
 
 add_vars <- function(data, use_profile_table = F) {
-  ifelse(profile_table, vars = subject_variable_names, vars=profile_variable_names)
-  left_join(data, variable_names, by = c("variable" = "name"))
+  if(use_profile_table) {
+    vars = profile_variable_names } 
+  else { vars = subject_variable_names }
+  left_join(data, vars, by = c("variable" = "name"))
 }
 
-clean_data <- function(data, labels, use_profile_table = F) {
+clean_data <- function(data, labels, locality, use_profile_table = F) {
   add_vars(data, use_profile_table) %>%
     filter(label %in% labels) %>%
     group_by(label) %>%
     mutate(estimate = sum(estimate)) %>%
     ungroup() %>%
-    select(estimate, label) %>%
+    mutate(locality = locality) %>%
+    select(estimate, label, locality) %>%
     distinct()
 }
 
+load_data <- function() {
+  tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE, overwrite = TRUE)
+  current_year <<- as.integer(format(Sys.Date(), "%Y"))
+  census_data <<- retrieve_census_data(current_year)
+  subject_variable_names <<- tidycensus::load_variables(latest_year, "acs5/subject", cache = T)
+  subject_variable_names <<- dplyr::collect(subject_variable_names)
+  profile_variable_names <<- tidycensus::load_variables(latest_year, "acs5/profile", cache = T)
+  profile_variable_names <<- dplyr::collect(profile_variable_names)
+}

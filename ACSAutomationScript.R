@@ -14,7 +14,7 @@ load_data()
 #*******************************************#
 #**Change this to add or remove geo values**#
 #*******************************************#
-load_geometry <- F
+load_geometry <- T
 
 #load ages
 print("Loading Ages...")
@@ -30,6 +30,10 @@ houston_population <- houston_ages_raw %>%
   summarize(sum(estimate)) %>%
   first()
 
+all_populations <- data.frame(Locality = c("Texas", "Harris County", "Houston"),
+                     Estimate = c(texas_population, harris_population, houston_population),
+                     Label = c("Total Population", "Total Population", "Total Population"))
+
 texas_ages_cleaned <- clean_data(texas_ages_raw, age_labels, "Texas")
 harris_ages_cleaned <- clean_data(harris_ages_raw, age_labels, "Harris County")
 houston_ages_cleaned <- clean_data(houston_ages_raw, age_labels, "Houston")
@@ -43,10 +47,6 @@ texas_poverty_raw = call_tidycensus("state", "S1701")
 harris_poverty_raw = call_tidycensus("county", "S1701")
 houston_poverty_raw = call_tidycensus("city", "S1701")
 
-# texas_poverty_population <- texas_poverty_raw[texas_poverty_raw$variable=="S1701_C01_002",]$estimate
-# harris_poverty_population <- harris_poverty_raw[harris_poverty_raw$variable=="S1701_C01_002",]$estimate
-# houston_poverty_population <- harris_poverty_raw[harris_poverty_raw$variable=="S1701_C01_002",]$estimate
-
 texas_poverty_cleaned <- clean_data(texas_poverty_raw, poverty_labels, "Texas")
 harris_poverty_cleaned <- clean_data(harris_poverty_raw, poverty_labels, "Harris County")
 houston_poverty_cleaned <- clean_data(houston_poverty_raw, poverty_labels, "Houston")
@@ -59,8 +59,6 @@ print("Loading Languages...")
 texas_languages_raw = call_tidycensus("state", "S1601")
 harris_languages_raw = call_tidycensus("county", "S1601")
 houston_languages_raw = call_tidycensus("city", "S1601")
-
-view(add_vars(texas_languages_raw))
 
 texas_languages_cleaned <- clean_data(texas_languages_raw, language_labels, "Texas")
 harris_languages_cleaned <- clean_data(harris_languages_raw, language_labels, "Harris County")
@@ -100,8 +98,6 @@ texas_health_care_coverage_raw = call_tidycensus("state", "S2701")
 harris_health_care_coverage_raw = call_tidycensus("county", "S2701")
 houston_health_care_coverage_raw = call_tidycensus("city", "S2701")
 
-view(add_vars(houston_health_care_coverage_raw))
-
 print("Formatting Health Care Coverage...")
 texas_health_care_coverage_cleaned <- clean_data(texas_health_care_coverage_raw, health_care_coverage_labels, "Texas")
 harris_health_care_coverage_cleaned <- clean_data(harris_health_care_coverage_raw, health_care_coverage_labels, "Harris County")
@@ -110,11 +106,13 @@ houston_health_care_coverage_cleaned <- clean_data(houston_health_care_coverage_
 all_health_care_coverage <- rbind(texas_health_care_coverage_cleaned, harris_health_care_coverage_cleaned)
 all_health_care_coverage <- rbind(all_health_care_coverage, houston_health_care_coverage_cleaned)
 
-all_data <- rbind(all_ages, all_health_care_coverage)
+all_data <- rbind(all_populations, all_ages)
+all_data <- rbind(all_data, all_health_care_coverage)
 all_data <- rbind(all_data, all_household_type)
 all_data <- rbind(all_data, all_languages)
 all_data <- rbind(all_data, all_opp_youth)
 all_data <- rbind(all_data, all_poverty)
+
 
 # write_excel_csv2(all_data, "./acs5_data.xlsx")
 write_excel_csv2(all_data, "./acs5_data.csv", delim=",")

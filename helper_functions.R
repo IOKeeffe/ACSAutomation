@@ -18,7 +18,7 @@ call_tidycensus <- function(geo, table) {
   }
 
   results <- tidycensus::get_acs(
-    geometry = load_geometry,
+    # geometry = load_geometry,
     geography = geography,
     state = state,
     county = county,

@@ -12,16 +12,14 @@ call_tidycensus <- function(geo, table) {
     zcta <- NULL
   } else if(geo == "Houston" || geo == "city") {
     filter_zip <- T
-    state <- "tx"
-    geography <- "zcta"
+    state <- texas_acs_code
+    geography <- "place"
     county <- NULL
-    zcta <- houston_zip_codes
   }
 
   results <- tidycensus::get_acs(
-    # geometry = load_geometry,
+    geometry = load_geometry,
     geography = geography,
-    zcta = zcta,
     state = state,
     county = county,
     survey = "acs5",  
@@ -30,7 +28,7 @@ call_tidycensus <- function(geo, table) {
     )
   if (filter_zip) {
     return(results %>% 
-    filter(GEOID %in% houston_zip_codes))
+    filter(NAME == "Houston city, Texas"))
   }
   else {
     return(results)
@@ -65,10 +63,11 @@ clean_data <- function(data, labels, locality, use_profile_table = F) {
   add_vars(data, use_profile_table) %>%
     filter(label %in% labels) %>%
     group_by(label) %>%
-    mutate(estimate = sum(estimate)) %>%
+    mutate(Estimate = sum(estimate)) %>%
     ungroup() %>%
-    mutate(locality = locality) %>%
-    select(estimate, label, locality) %>%
+    mutate(Locality = locality) %>%
+    mutate(Label = label) %>%
+    select(Estimate, Label, Locality) %>%
     distinct()
 }
 

@@ -1,0 +1,130 @@
+﻿estimate,label,locality
+"1999803,0",Estimate!!Total!!Total population!!AGE!!Under 5 years,Texas
+"2024009,0",Estimate!!Total!!Total population!!AGE!!5 to 9 years,Texas
+"2090590,0",Estimate!!Total!!Total population!!AGE!!10 to 14 years,Texas
+"2017644,0",Estimate!!Total!!Total population!!AGE!!15 to 19 years,Texas
+"1997256,0",Estimate!!Total!!Total population!!AGE!!20 to 24 years,Texas
+"7,1",Estimate!!Percent!!Total population!!AGE!!Under 5 years,Texas
+"7,2",Estimate!!Percent!!Total population!!AGE!!5 to 9 years,Texas
+"7,4",Estimate!!Percent!!Total population!!AGE!!10 to 14 years,Texas
+"7,1",Estimate!!Percent!!Total population!!AGE!!15 to 19 years,Texas
+"7,1",Estimate!!Percent!!Total population!!AGE!!20 to 24 years,Texas
+"352470,0",Estimate!!Total!!Total population!!AGE!!Under 5 years,Harris County
+"344290,0",Estimate!!Total!!Total population!!AGE!!5 to 9 years,Harris County
+"348779,0",Estimate!!Total!!Total population!!AGE!!10 to 14 years,Harris County
+"318598,0",Estimate!!Total!!Total population!!AGE!!15 to 19 years,Harris County
+"318536,0",Estimate!!Total!!Total population!!AGE!!20 to 24 years,Harris County
+"7,6",Estimate!!Percent!!Total population!!AGE!!Under 5 years,Harris County
+"7,4",Estimate!!Percent!!Total population!!AGE!!5 to 9 years,Harris County
+"7,5",Estimate!!Percent!!Total population!!AGE!!10 to 14 years,Harris County
+"6,9",Estimate!!Percent!!Total population!!AGE!!15 to 19 years,Harris County
+"6,9",Estimate!!Percent!!Total population!!AGE!!20 to 24 years,Harris County
+"176302,0",Estimate!!Total!!Total population!!AGE!!Under 5 years,Houston
+"161603,0",Estimate!!Total!!Total population!!AGE!!5 to 9 years,Houston
+"152008,0",Estimate!!Total!!Total population!!AGE!!10 to 14 years,Houston
+"144947,0",Estimate!!Total!!Total population!!AGE!!15 to 19 years,Houston
+"172357,0",Estimate!!Total!!Total population!!AGE!!20 to 24 years,Houston
+"7,6",Estimate!!Percent!!Total population!!AGE!!Under 5 years,Houston
+"7,0",Estimate!!Percent!!Total population!!AGE!!5 to 9 years,Houston
+"6,6",Estimate!!Percent!!Total population!!AGE!!10 to 14 years,Houston
+"6,3",Estimate!!Percent!!Total population!!AGE!!15 to 19 years,Houston
+"7,5",Estimate!!Percent!!Total population!!AGE!!20 to 24 years,Houston
+"189306,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Texas
+"647793,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Texas
+"7,9",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Texas
+"12,1",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Texas
+"35654,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Harris County
+"122613,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Harris County
+"8,5",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Harris County
+"13,8",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Harris County
+"18025,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Houston
+"61717,0",Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Houston
+"8,6",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years,Houston
+"15,5",Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years,Houston
+"2175112,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Texas
+"22,4",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Texas
+"210875,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Texas
+"2,2",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Texas
+"133474,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Texas
+"1,4","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Texas
+"631462,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Texas
+"6,5","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Texas
+"281724,0",Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Texas
+"36,3",Percent!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Texas
+"358930,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Harris County
+"22,4",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Harris County
+"42890,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Harris County
+"2,7",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Harris County
+"22587,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Harris County
+"1,4","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Harris County
+"118023,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Harris County
+"7,4","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Harris County
+"42779,0",Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Harris County
+"33,0",Percent!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Harris County
+"149138,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Houston
+"17,4",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Married-couple family!!With own children of the householder under 18 years,Houston
+"23604,0",Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Houston
+"2,7",Percent!!HOUSEHOLDS BY TYPE!!Total households!!Cohabiting couple household!!With own children of the householder under 18 years,Houston
+"11229,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Houston
+"1,3","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Male householder, no spouse/partner present!!With own children of the householder under 18 years",Houston
+"66447,0","Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Houston
+"7,7","Percent!!HOUSEHOLDS BY TYPE!!Total households!!Female householder, no spouse/partner present!!With own children of the householder under 18 years",Houston
+"20500,0",Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Houston
+"36,5",Percent!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years!!Grandparents responsible for grandchildren,Houston
+"16947811,0",Estimate!!Total!!Population 5 years and over!!Speak only English,Texas
+"7690703,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Texas
+"590374,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Texas
+"775765,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Texas
+"256400,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Texas
+"64,5",Estimate!!Percent!!Population 5 years and over!!Speak only English,Texas
+"29,3",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Texas
+"2,2",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Texas
+"3,0",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Texas
+"1,0",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Texas
+"2389575,0",Estimate!!Total!!Population 5 years and over!!Speak only English,Harris County
+"1504602,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Harris County
+"133848,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Harris County
+"198764,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Harris County
+"67371,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Harris County
+"55,6",Estimate!!Percent!!Population 5 years and over!!Speak only English,Harris County
+"35,0",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Harris County
+"3,1",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Harris County
+"4,6",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Harris County
+"1,6",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Harris County
+"1089983,0",Estimate!!Total!!Population 5 years and over!!Speak only English,Houston
+"830945,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Houston
+"75726,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Houston
+"94241,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Houston
+"43235,0",Estimate!!Total!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Houston
+"51,1",Estimate!!Percent!!Population 5 years and over!!Speak only English,Houston
+"38,9",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Spanish,Houston
+"3,5",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other Indo-European languages,Houston
+"4,4",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Asian and Pacific Island languages,Houston
+"2,0",Estimate!!Percent!!Population 5 years and over!!SPEAK A LANGUAGE OTHER THAN ENGLISH!!Other languages,Houston
+"5,1",Estimate!!Unemployment rate!!Population 16 years and over,Texas
+"17,0",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!16 to 19 years,Texas
+"9,0",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!20 to 24 years,Texas
+"5,8",Estimate!!Unemployment rate!!Population 16 years and over,Harris County
+"20,0",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!16 to 19 years,Harris County
+"10,3",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!20 to 24 years,Harris County
+"5,9",Estimate!!Unemployment rate!!Population 16 years and over,Houston
+"20,8",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!16 to 19 years,Houston
+"10,2",Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!20 to 24 years,Houston
+"1516985,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Texas
+"448103,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Texas
+"1068882,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Texas
+"20,9",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Texas
+"22,7",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Texas
+"20,3",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Texas
+"288087,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Harris County
+"86312,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Harris County
+"201775,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Harris County
+"23,4",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Harris County
+"24,8",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Harris County
+"22,8",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Harris County
+"179402,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Houston
+"55249,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Houston
+"124153,0",Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Houston
+"31,2",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years,Houston
+"31,6",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years,Houston
+"31,1",Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years,Houston

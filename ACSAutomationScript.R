@@ -1,6 +1,10 @@
 list.of.packages <- c("tidycensus", "tidyverse", "readxl")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
+
+# Prevents scientific notation
+options(scipen=999)
+
 library(tidyverse)
 library(tidycensus)
 library(readxl)
@@ -79,16 +83,16 @@ houston_opp_youth_cleaned <- clean_data(houston_opp_youth_raw, opp_youth_labels,
 all_opp_youth <- rbind(texas_opp_youth_cleaned, harris_opp_youth_cleaned)
 all_opp_youth <- rbind(all_opp_youth, houston_opp_youth_cleaned)
 
-print("Loading non-traditional households...")
+print("Loading  household types...")
 texas_household_data_raw = call_tidycensus("state", "DP02")
 harris_household_data_raw = call_tidycensus("county", "DP02")
 houston_household_data_raw = call_tidycensus("city", "DP02")
 
 # The T in these calls is to specify that it is a data profile, not a data subject set.
-print("Formatting non-traditional households...")
-texas_household_type_cleaned <- clean_data(texas_household_data_raw, household_type_labels, "Texas", T)
-harris_household_type_cleaned <- clean_data(harris_household_data_raw, household_type_labels, "Harris County", T)
-houston_household_type_cleaned <- clean_data(houston_household_data_raw, household_type_labels, "Houston", T)
+print("Formatting  household types...")
+texas_household_type_cleaned <- clean_data(texas_household_data_raw, household_type_labels, "Texas", "profile")
+harris_household_type_cleaned <- clean_data(harris_household_data_raw, household_type_labels, "Harris County", "profile")
+houston_household_type_cleaned <- clean_data(houston_household_data_raw, household_type_labels, "Houston", "profile")
 
 all_household_type <- rbind(texas_household_type_cleaned, harris_household_type_cleaned)
 all_household_type <- rbind(all_household_type, houston_household_type_cleaned)
@@ -106,6 +110,15 @@ houston_health_care_coverage_cleaned <- clean_data(houston_health_care_coverage_
 all_health_care_coverage <- rbind(texas_health_care_coverage_cleaned, harris_health_care_coverage_cleaned)
 all_health_care_coverage <- rbind(all_health_care_coverage, houston_health_care_coverage_cleaned)
 
+# first row is total, multiply percent by total and add
+texas_new_american_children_raw = call_tidycensus("state", "B05009")
+harris_new_american_children_raw = call_tidycensus("county", "B05009") 
+houston_new_american_children_raw = call_tidycensus("city", "B05009")
+
+texas_new_american_children_cleaned = combine_values(texas_new_american_children_raw, new_american_children_element_variables, "New American Children")
+harris_new_american_children_cleaned = combine_values(harris_new_american_children_raw, new_american_children_element_variables, "New American Children")
+houston_new_american_children_cleaned = combine_values(houston_new_american_children_raw, new_american_children_element_variables, "New American Children")
+
 all_data <- rbind(all_populations, all_ages)
 all_data <- rbind(all_data, all_health_care_coverage)
 all_data <- rbind(all_data, all_household_type)
@@ -113,6 +126,4 @@ all_data <- rbind(all_data, all_languages)
 all_data <- rbind(all_data, all_opp_youth)
 all_data <- rbind(all_data, all_poverty)
 
-
-# write_excel_csv2(all_data, "./acs5_data.xlsx")
 write_excel_csv2(all_data, "./acs5_data.csv", delim=",")

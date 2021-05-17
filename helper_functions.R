@@ -52,15 +52,19 @@ retrieve_census_data <- function(year) {
   return(data)
 }
 
-add_vars <- function(data, use_profile_table = F) {
-  if(use_profile_table) {
-    vars = profile_variable_names } 
-  else { vars = subject_variable_names }
-  left_join(data, vars, by = c("variable" = "name"))
+add_vars <- function(data, variable_type = "subject") {
+  if(variable_type == "subject") {
+    variables = subject_variable_names
+  } else if(variable_type == "profile") {
+    variables = profile_variable_names
+  } else if(variable_type == "other") {
+    variables = other_variable_names
+  }
+  left_join(data, variables, by = c("variable" = "name"))
 }
 
-clean_data <- function(data, labels, locality, use_profile_table = F) {
-  add_vars(data, use_profile_table) %>%
+clean_data <- function(data, labels, locality, variable_type = "subject") {
+  add_vars(data, variable_type) %>%
     filter(label %in% labels) %>%
     group_by(label) %>%
     mutate(Estimate = sum(estimate)) %>%
@@ -75,8 +79,22 @@ load_data <- function() {
   tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE, overwrite = TRUE)
   current_year <<- as.integer(format(Sys.Date(), "%Y"))
   census_data <<- retrieve_census_data(current_year)
+  other_variable_names <<- tidycensus::load_variables(latest_year, "acs5", cache = T)
+  other_variable_names <<- dplyr::collect(other_variable_names)
   subject_variable_names <<- tidycensus::load_variables(latest_year, "acs5/subject", cache = T)
   subject_variable_names <<- dplyr::collect(subject_variable_names)
   profile_variable_names <<- tidycensus::load_variables(latest_year, "acs5/profile", cache = T)
   profile_variable_names <<- dplyr::collect(profile_variable_names)
+}
+
+combine_values <- function(df, variables, name) {
+  total <- df[1,]$estimate
+  df <- df %>%
+    filter(variable %in% variables)
+  values <- c(sum(df$estimate), sum(df$estimate)/total * 100)
+  labels <- c("Total New American Children", "Percent New American Children")
+  return(data.frame(
+    Estimate = round(as.numeric(c(sum(df$estimate), sum(df$estimate)/total * 100), 1)),
+    Label = c(str_interp("Total ${name}"), str_interp("Percent ${name}"))
+  ))
 }

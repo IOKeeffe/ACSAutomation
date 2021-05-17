@@ -56,9 +56,16 @@ household_type_labels <- c(
   
 )
 
-health_care_coverage_labels <-c(
+health_care_coverage_labels <- c(
   "Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years",
   "Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years",
   "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years",
   "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years"
+)
+
+new_american_children_element_variables <-c(
+  "B05009_007",
+  "B05009_017",
+  "B05009_025",
+  "B05009_035"
 )

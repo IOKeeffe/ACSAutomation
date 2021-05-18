@@ -18,7 +18,7 @@ call_tidycensus <- function(geo, table) {
   }
 
   results <- tidycensus::get_acs(
-    # geometry = load_geometry,
+    geometry = load_geometry,
     geography = geography,
     state = state,
     county = county,
@@ -63,16 +63,14 @@ add_vars <- function(data, variable_type = "subject") {
   left_join(data, variables, by = c("variable" = "name"))
 }
 
-clean_data <- function(data, labels, locality, variable_type = "subject") {
+clean_data <- function(data, labels, variable_type = "subject") {
   add_vars(data, variable_type) %>%
-    filter(label %in% labels) %>%
-    group_by(label) %>%
-    mutate(Estimate = sum(estimate)) %>%
-    ungroup() %>%
-    mutate(Locality = locality) %>%
-    mutate(Label = label) %>%
-    select(Estimate, Label, Locality) %>%
-    distinct()
+  filter(label %in% labels$acs_label) %>%
+  mutate(Estimate = round(estimate, digits=0)) %>%
+  mutate(ACS_Label = label) %>%
+  mutate(Display_Label = labels$display_label) %>%
+  select(Estimate, ACS_Label, Display_Label) %>%
+  distinct()
 }
 
 load_data <- function() {
@@ -95,6 +93,7 @@ combine_values <- function(df, variables, name) {
   labels <- c("Total New American Children", "Percent New American Children")
   return(data.frame(
     Estimate = round(as.numeric(c(sum(df$estimate), sum(df$estimate)/total * 100), 1)),
-    Label = c(str_interp("Total ${name}"), str_interp("Percent ${name}"))
+    Display_Label = c(str_interp("Total ${name}"), str_interp("Percent ${name}")),
+    ACS_Label = c(NA, NA)
   ))
 }

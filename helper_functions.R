@@ -73,6 +73,7 @@ clean_data <- function(data, labels, variable_type = "subject") {
   distinct()
 }
 
+# the dplyr:collect loads the variables directly into memory, you can remove them if it slows down your machine
 load_data <- function() {
   tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE, overwrite = TRUE)
   current_year <<- as.integer(format(Sys.Date(), "%Y"))

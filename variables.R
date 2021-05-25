@@ -130,8 +130,10 @@ health_care_coverage_labels = data.frame(
 )
 
 new_american_children_element_variables <-c(
-  "B05009_007",
-  "B05009_017",
-  "B05009_025",
-  "B05009_035"
+  "B05009_005", # Estimate!!Total:!!Under 6 years:!!Living with two parents:!!Child is foreign born
+  "B05009_008", # Estimate!!Total:!!Under 6 years:!!Living with two parents:!!Both parents foreign born:!!Child is native
+  "B05009_018", # Estimate!!Total:!!Under 6 years:!!Living with one parent:!!Foreign-born parent:!!Child is native
+  "B05009_023", # Estimate!!Total:!!6 to 17 years:!!Living with two parents:!!Child is foreign born
+  "B05009_026", # Estimate!!Total:!!6 to 17 years:!!Living with two parents:!!Both parents foreign born:!!Child is native
+  "B05009_036"  # Estimate!!Total:!!6 to 17 years:!!Living with one parent:!!Foreign-born parent:!!Child is native
 )

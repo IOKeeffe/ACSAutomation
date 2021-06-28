@@ -12,7 +12,27 @@ age_labels = data.frame(
     "Estimate!!Percent!!Total population!!AGE!!5 to 9 years",
     "Estimate!!Percent!!Total population!!AGE!!10 to 14 years",
     "Estimate!!Percent!!Total population!!AGE!!15 to 19 years",
-    "Estimate!!Percent!!Total population!!AGE!!20 to 24 years"
+    "Estimate!!Percent!!Total population!!AGE!!20 to 24 years",
+    "Estimate!!Male!!Total population!!AGE!!Under 5 years",
+    "Estimate!!Male!!Total population!!AGE!!5 to 9 years",
+    "Estimate!!Male!!Total population!!AGE!!10 to 14 years",
+    "Estimate!!Male!!Total population!!AGE!!15 to 19 years",
+    "Estimate!!Male!!Total population!!AGE!!20 to 24 years",
+    "Estimate!!Percent Male!!Total population!!AGE!!Under 5 years",
+    "Estimate!!Percent Male!!Total population!!AGE!!5 to 9 years",
+    "Estimate!!Percent Male!!Total population!!AGE!!10 to 14 years",
+    "Estimate!!Percent Male!!Total population!!AGE!!15 to 19 years",
+    "Estimate!!Percent Male!!Total population!!AGE!!20 to 24 years",
+    "Estimate!!Female!!Total population!!AGE!!Under 5 years",
+    "Estimate!!Female!!Total population!!AGE!!5 to 9 years",
+    "Estimate!!Female!!Total population!!AGE!!10 to 14 years",
+    "Estimate!!Female!!Total population!!AGE!!15 to 19 years",
+    "Estimate!!Female!!Total population!!AGE!!20 to 24 years",
+    "Estimate!!Percent Female!!Total population!!AGE!!Under 5 years",
+    "Estimate!!Percent Female!!Total population!!AGE!!5 to 9 years",
+    "Estimate!!Percent Female!!Total population!!AGE!!10 to 14 years",
+    "Estimate!!Percent Female!!Total population!!AGE!!15 to 19 years",
+    "Estimate!!Percent Female!!Total population!!AGE!!20 to 24 years"
   ), 
   display_label = c(
     "Total population Under 5 years",
@@ -24,7 +44,27 @@ age_labels = data.frame(
     "Percent 5 to 9 years",
     "Percent 10 to 14 years",
     "Percent 15 to 19 years",
-    "Percent 20 to 24 years"
+    "Percent 20 to 24 years",
+    "Total male population Under 5 years",
+    "Total male population 5 to 9 years",
+    "Total male population 10 to 14 years",
+    "Total male population 15 to 19 years",
+    "Total male population 20 to 24 years",
+    "Percent of males Under 5 years",
+    "Percent of males 5 to 9 years",
+    "Percent of males 10 to 14 years",
+    "Percent of males 15 to 19 years",
+    "Percent of males 20 to 24 years",
+    "Total female population Under 5 years",
+    "Total female population 5 to 9 years",
+    "Total female population 10 to 14 years",
+    "Total female population 15 to 19 years",
+    "Total female population 20 to 24 years",
+    "Percent of females Under 5 years",
+    "Percent of females 5 to 9 years",
+    "Percent of females 10 to 14 years",
+    "Percent of females 15 to 19 years",
+    "Percent of females 20 to 24 years"
   )
 )
 
@@ -33,17 +73,25 @@ poverty_labels = data.frame(
     "Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years",
     "Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years",
     "Estimate!!Below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years",
+    "Estimate!!Below poverty level!!Population for whom poverty status is determined!!SEX!!Male",
+    "Estimate!!Below poverty level!!Population for whom poverty status is determined!!SEX!!Female",
     "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years",
     "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!Under 5 years",
-    "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years"
+    "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!AGE!!Under 18 years!!5 to 17 years",
+    "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!SEX!!Male",
+    "Estimate!!Percent below poverty level!!Population for whom poverty status is determined!!SEX!!Female"
   ), 
   display_label = c(
     "Below poverty level Under 18 years",
     "Below poverty level Under 5 years",
     "Below poverty level 5 to 17 years",
+    "Below poverty level Male",
+    "Below poverty level Female",
     "Percent below poverty level Under 18 years",
     "Percent below poverty level Under 5 years",
-    "Percent below poverty level 5 to 17 years"
+    "Percent below poverty level 5 to 17 years",
+    "Percent below poverty level Male",
+    "Percent below poverty level Female"
   )
 )
 
@@ -81,7 +129,7 @@ opp_youth_labels = data.frame(
     "Estimate!!Unemployment rate!!Population 16 years and over!!AGE!!20 to 24 years"
   ),
   display_label = c(
-    "Unemployment ratePopulation 16 years and over",
+    "Unemployment rate Population 16 years and over",
     "Unemployment rate 16 to 19 years",
     "Unemployment rate 20 to 24 years"
   )
@@ -118,14 +166,22 @@ health_care_coverage_labels = data.frame(
   acs_label = c(
     "Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years",
     "Estimate!!Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years",
+    "Estimate!!Uninsured!!Civilian noninstitutionalized population!!SEX!!Male",
+    "Estimate!!Uninsured!!Civilian noninstitutionalized population!!SEX!!Female",
     "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!Under 6 years",
-    "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years"
+    "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!AGE!!6 to 18 years",
+    "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!SEX!!Male",
+    "Estimate!!Percent Uninsured!!Civilian noninstitutionalized population!!SEX!!Female"
   ), 
   display_label = c(
     "Uninsured Civilian noninstitutionalized population Under 6 years",
     "Uninsured Civilian noninstitutionalized population 6 to 18 years",
+    "Uninsured Civilian noninstitutionalized population Male",
+    "Uninsured Civilian noninstitutionalized population Female",
     "Percent Uninsured Civilian noninstitutionalized population Under 6 years",
-    "Percent Uninsured Civilian noninstitutionalized population 6 to 18 years"
+    "Percent Uninsured Civilian noninstitutionalized population 6 to 18 years",
+    "Percent Uninsured Civilian noninstitutionalized population Male",
+    "Percent Uninsured Civilian noninstitutionalized population Female"
   )
 )
 

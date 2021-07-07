@@ -193,3 +193,34 @@ new_american_children_element_variables <-c(
   "B05009_026", # Estimate!!Total:!!6 to 17 years:!!Living with two parents:!!Both parents foreign born:!!Child is native
   "B05009_036"  # Estimate!!Total:!!6 to 17 years:!!Living with one parent:!!Foreign-born parent:!!Child is native
 )
+
+race_by_age_labels = data.frame(
+  acs_label = c(
+    "Estimate!!Total:!!Male:!!Under 5 years",
+    "Estimate!!Total:!!Male:!!5 to 9 years",
+    "Estimate!!Total:!!Male:!!10 to 14 years",
+    "Estimate!!Total:!!Male:!!15 to 17 years",
+    "Estimate!!Total:!!Male:!!18 and 19 years",
+    "Estimate!!Total:!!Male:!!20 to 24 years",
+    "Estimate!!Total:!!Female:!!Under 5 years",
+    "Estimate!!Total:!!Female:!!5 to 9 years",
+    "Estimate!!Total:!!Female:!!10 to 14 years",
+    "Estimate!!Total:!!Female:!!15 to 17 years",
+    "Estimate!!Total:!!Female:!!18 and 19 years",
+    "Estimate!!Total:!!Female:!!20 to 24 years"
+  ),
+  display_label = c(
+      "Male Under 5 years",
+      "Male 5 to 9 years",
+      "Male 10 to 14 years",
+      "Male 15 to 17 years",
+      "Male 18 and 19 years",
+      "Male 20 to 24 years",
+      "Female Under 5 years",
+      "Female 5 to 9 years",
+      "Female 10 to 14 years",
+      "Female 15 to 17 years",
+      "Female 18 and 19 years",
+      "Female 20 to 24 years"
+  )
+)

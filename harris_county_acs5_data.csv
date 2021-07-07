@@ -40,36 +40,144 @@
 14,Percent below poverty level Male
 17,Percent below poverty level Female
 4646630,Total Population
-1089983,Total Population 5 years and over who Speak only English
-830945,Total Population 5 years and over who speak a language other than English: Spanish
-75726,Total Population 5 years and over who speak a language other than English: Other languages
-94241,Total Population 5 years and over who speak a language other than English: Other Indo-European languages
-43235,Total Population 5 years and over who speak a language other than English: Asian and Pacific Island languages
-51,Percent Population 5 years and over who Speak only English
-39,Percent Population 5 years and over who speak a language other than English: Spanish
-4,Percent Population 5 years and over who speak a language other than English: Other languages
-4,Percent Population 5 years and over who speak a language other than English: Other Indo-European languages
+2389575,Total Population 5 years and over who Speak only English
+1504602,Total Population 5 years and over who speak a language other than English: Spanish
+133848,Total Population 5 years and over who speak a language other than English: Other languages
+198764,Total Population 5 years and over who speak a language other than English: Other Indo-European languages
+67371,Total Population 5 years and over who speak a language other than English: Asian and Pacific Island languages
+56,Percent Population 5 years and over who Speak only English
+35,Percent Population 5 years and over who speak a language other than English: Spanish
+3,Percent Population 5 years and over who speak a language other than English: Other languages
+5,Percent Population 5 years and over who speak a language other than English: Other Indo-European languages
 2,Percent Population 5 years and over who speak a language other than English: Asian and Pacific Island languages
 6,Unemployment rate Population 16 years and over
-21,Unemployment rate 16 to 19 years
+20,Unemployment rate 16 to 19 years
 10,Unemployment rate 20 to 24 years
-149138,Total households Married-couple family With own children of the householder under 18 years
-17,Total households Cohabiting couple household With own children of the householder under 18 years
-23604,"Total households Male householder, no spouse/partner present With own children of the householder under 18 years"
+358930,Total households Married-couple family With own children of the householder under 18 years
+22,Total households Cohabiting couple household With own children of the householder under 18 years
+42890,"Total households Male householder, no spouse/partner present With own children of the householder under 18 years"
 3,"Total households Female householder, no spouse/partner present With own children of the householder under 18 years"
-11229,Number of grandparents living with own grandchildren under 18 years Grandparents responsible for grandchildren
+22587,Number of grandparents living with own grandchildren under 18 years Grandparents responsible for grandchildren
 1,Percent households Married-couple family With own children of the householder under 18 years
-66447,Percent households Cohabiting couple household With own children of the householder under 18 years
-8,"Percent households Male householder, no spouse/partner present With own children of the householder under 18 years"
-20500,"Percent households Female householder, no spouse/partner present With own children of the householder under 18 years"
-36,Percent of households withgrandparents living with own grandchildren under 18 years Grandparents responsible for grandchildren
-18025,Uninsured Civilian noninstitutionalized population Under 6 years
-61717,Uninsured Civilian noninstitutionalized population 6 to 18 years
-282636,Uninsured Civilian noninstitutionalized population Male
-247284,Uninsured Civilian noninstitutionalized population Female
-9,Percent Uninsured Civilian noninstitutionalized population Under 6 years
-16,Percent Uninsured Civilian noninstitutionalized population 6 to 18 years
-25,Percent Uninsured Civilian noninstitutionalized population Male
-21,Percent Uninsured Civilian noninstitutionalized population Female
-231576,Total New American Children
-42,Percent New American Children
+118023,Percent households Cohabiting couple household With own children of the householder under 18 years
+7,"Percent households Male householder, no spouse/partner present With own children of the householder under 18 years"
+42779,"Percent households Female householder, no spouse/partner present With own children of the householder under 18 years"
+33,Percent of households withgrandparents living with own grandchildren under 18 years Grandparents responsible for grandchildren
+35654,Uninsured Civilian noninstitutionalized population Under 6 years
+122613,Uninsured Civilian noninstitutionalized population 6 to 18 years
+493344,Uninsured Civilian noninstitutionalized population Male
+441739,Uninsured Civilian noninstitutionalized population Female
+8,Percent Uninsured Civilian noninstitutionalized population Under 6 years
+14,Percent Uninsured Civilian noninstitutionalized population 6 to 18 years
+22,Percent Uninsured Civilian noninstitutionalized population Male
+19,Percent Uninsured Civilian noninstitutionalized population Female
+430276,Total New American Children
+36,Percent New American Children
+111998,White Alone Male Under 5 years
+107458,White Alone Male 5 to 9 years
+109673,White Alone Male 10 to 14 years
+62578,White Alone Male 15 to 17 years
+37903,White Alone Male 18 and 19 years
+96856,White Alone Male 20 to 24 years
+107706,White Alone Female Under 5 years
+107184,White Alone Female 5 to 9 years
+106281,White Alone Female 10 to 14 years
+60081,White Alone Female 15 to 17 years
+35323,White Alone Female 18 and 19 years
+92794,White Alone Female 20 to 24 years
+32600,Black or African American Alone Male Under 5 years
+32217,Black or African American Alone Male 5 to 9 years
+34432,Black or African American Alone Male 10 to 14 years
+19863,Black or African American Alone Male 15 to 17 years
+11815,Black or African American Alone Male 18 and 19 years
+32132,Black or African American Alone Male 20 to 24 years
+32296,Black or African American Alone Female Under 5 years
+32370,Black or African American Alone Female 5 to 9 years
+31863,Black or African American Alone Female 10 to 14 years
+19012,Black or African American Alone Female 15 to 17 years
+11507,Black or African American Alone Female 18 and 19 years
+33477,Black or African American Alone Female 20 to 24 years
+541,American Indian and Alaskan Native Alone Male Under 5 years
+799,American Indian and Alaskan Native Alone Male 5 to 9 years
+752,American Indian and Alaskan Native Alone Male 10 to 14 years
+386,American Indian and Alaskan Native Alone Male 15 to 17 years
+315,American Indian and Alaskan Native Alone Male 18 and 19 years
+764,American Indian and Alaskan Native Alone Male 20 to 24 years
+622,American Indian and Alaskan Native Alone Female Under 5 years
+301,American Indian and Alaskan Native Alone Female 5 to 9 years
+1139,American Indian and Alaskan Native Alone Female 10 to 14 years
+683,American Indian and Alaskan Native Alone Female 15 to 17 years
+406,American Indian and Alaskan Native Alone Female 18 and 19 years
+716,American Indian and Alaskan Native Alone Female 20 to 24 years
+9214,Asian Alone Male Under 5 years
+9016,Asian Alone Male 5 to 9 years
+8823,Asian Alone Male 10 to 14 years
+5688,Asian Alone Male 15 to 17 years
+3096,Asian Alone Male 18 and 19 years
+10328,Asian Alone Male 20 to 24 years
+9112,Asian Alone Female Under 5 years
+8339,Asian Alone Female 5 to 9 years
+8750,Asian Alone Female 10 to 14 years
+5432,Asian Alone Female 15 to 17 years
+3145,Asian Alone Female 18 and 19 years
+10122,Asian Alone Female 20 to 24 years
+63,Native Hawaiian and Other Pacific Islander Alone Male Under 5 years
+248,Native Hawaiian and Other Pacific Islander Alone Male 5 to 9 years
+208,Native Hawaiian and Other Pacific Islander Alone Male 10 to 14 years
+25,Native Hawaiian and Other Pacific Islander Alone Male 15 to 17 years
+182,Native Hawaiian and Other Pacific Islander Alone Male 18 and 19 years
+152,Native Hawaiian and Other Pacific Islander Alone Male 20 to 24 years
+76,Native Hawaiian and Other Pacific Islander Alone Female Under 5 years
+28,Native Hawaiian and Other Pacific Islander Alone Female 5 to 9 years
+95,Native Hawaiian and Other Pacific Islander Alone Female 10 to 14 years
+136,Native Hawaiian and Other Pacific Islander Alone Female 15 to 17 years
+166,Native Hawaiian and Other Pacific Islander Alone Female 18 and 19 years
+115,Native Hawaiian and Other Pacific Islander Alone Female 20 to 24 years
+16549,Some Other Race Alone Male Under 5 years
+17509,Some Other Race Alone Male 5 to 9 years
+18194,Some Other Race Alone Male 10 to 14 years
+10637,Some Other Race Alone Male 15 to 17 years
+5875,Some Other Race Alone Male 18 and 19 years
+17279,Some Other Race Alone Male 20 to 24 years
+15542,Some Other Race Alone Female Under 5 years
+14581,Some Other Race Alone Female 5 to 9 years
+16396,Some Other Race Alone Female 10 to 14 years
+9699,Some Other Race Alone Female 15 to 17 years
+4856,Some Other Race Alone Female 18 and 19 years
+15503,Some Other Race Alone Female 20 to 24 years
+8349,Two or More Races Male Under 5 years
+6989,Two or More Races Male 5 to 9 years
+6300,Two or More Races Male 10 to 14 years
+3076,Two or More Races Male 15 to 17 years
+2060,Two or More Races Male 18 and 19 years
+3764,Two or More Races Male 20 to 24 years
+7802,Two or More Races Female Under 5 years
+7251,Two or More Races Female 5 to 9 years
+5873,Two or More Races Female 10 to 14 years
+3057,Two or More Races Female 15 to 17 years
+1596,Two or More Races Female 18 and 19 years
+4534,Two or More Races Female 20 to 24 years
+38760,"White Alone, not Hispanic or Latino Male Under 5 years"
+35157,"White Alone, not Hispanic or Latino Male 5 to 9 years"
+37179,"White Alone, not Hispanic or Latino Male 10 to 14 years"
+22373,"White Alone, not Hispanic or Latino Male 15 to 17 years"
+12535,"White Alone, not Hispanic or Latino Male 18 and 19 years"
+35898,"White Alone, not Hispanic or Latino Male 20 to 24 years"
+36790,"White Alone, not Hispanic or Latino Female Under 5 years"
+34981,"White Alone, not Hispanic or Latino Female 5 to 9 years"
+34329,"White Alone, not Hispanic or Latino Female 10 to 14 years"
+21174,"White Alone, not Hispanic or Latino Female 15 to 17 years"
+11097,"White Alone, not Hispanic or Latino Female 18 and 19 years"
+34522,"White Alone, not Hispanic or Latino Female 20 to 24 years"
+94282,Hispanic or Latino Male Under 5 years
+94136,Hispanic or Latino Male 5 to 9 years
+94783,Hispanic or Latino Male 10 to 14 years
+52966,Hispanic or Latino Male 15 to 17 years
+32410,Hispanic or Latino Male 18 and 19 years
+80175,Hispanic or Latino Male 20 to 24 years
+90939,Hispanic or Latino Female Under 5 years
+90443,Hispanic or Latino Female 5 to 9 years
+92397,Hispanic or Latino Female 10 to 14 years
+51034,Hispanic or Latino Female 15 to 17 years
+30533,Hispanic or Latino Female 18 and 19 years
+76198,Hispanic or Latino Female 20 to 24 years

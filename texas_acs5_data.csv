@@ -73,3 +73,111 @@
 16,Percent Uninsured Civilian noninstitutionalized population Female
 1720582,Total New American Children
 25,Percent New American Children
+737251,White Alone Male Under 5 years
+735349,White Alone Male 5 to 9 years
+769645,White Alone Male 10 to 14 years
+447747,White Alone Male 15 to 17 years
+295804,White Alone Male 18 and 19 years
+738345,White Alone Male 20 to 24 years
+701195,White Alone Female Under 5 years
+714179,White Alone Female 5 to 9 years
+734343,White Alone Female 10 to 14 years
+433268,White Alone Female 15 to 17 years
+278221,White Alone Female 18 and 19 years
+691994,White Alone Female 20 to 24 years
+118280,Black or African American Alone Male Under 5 years
+126162,Black or African American Alone Male 5 to 9 years
+128811,Black or African American Alone Male 10 to 14 years
+76594,Black or African American Alone Male 15 to 17 years
+53887,Black or African American Alone Male 18 and 19 years
+138618,Black or African American Alone Male 20 to 24 years
+117512,Black or African American Alone Female Under 5 years
+120338,Black or African American Alone Female 5 to 9 years
+125426,Black or African American Alone Female 10 to 14 years
+75222,Black or African American Alone Female 15 to 17 years
+49823,Black or African American Alone Female 18 and 19 years
+131850,Black or African American Alone Female 20 to 24 years
+4382,American Indian and Alaskan Native Alone Male Under 5 years
+4034,American Indian and Alaskan Native Alone Male 5 to 9 years
+5642,American Indian and Alaskan Native Alone Male 10 to 14 years
+3796,American Indian and Alaskan Native Alone Male 15 to 17 years
+2808,American Indian and Alaskan Native Alone Male 18 and 19 years
+5585,American Indian and Alaskan Native Alone Male 20 to 24 years
+3748,American Indian and Alaskan Native Alone Female Under 5 years
+3950,American Indian and Alaskan Native Alone Female 5 to 9 years
+5787,American Indian and Alaskan Native Alone Female 10 to 14 years
+3510,American Indian and Alaskan Native Alone Female 15 to 17 years
+2325,American Indian and Alaskan Native Alone Female 18 and 19 years
+5538,American Indian and Alaskan Native Alone Female 20 to 24 years
+41774,Asian Alone Male Under 5 years
+44575,Asian Alone Male 5 to 9 years
+44574,Asian Alone Male 10 to 14 years
+25315,Asian Alone Male 15 to 17 years
+16188,Asian Alone Male 18 and 19 years
+45235,Asian Alone Male 20 to 24 years
+39618,Asian Alone Female Under 5 years
+43981,Asian Alone Female 5 to 9 years
+42840,Asian Alone Female 10 to 14 years
+24576,Asian Alone Female 15 to 17 years
+15750,Asian Alone Female 18 and 19 years
+43175,Asian Alone Female 20 to 24 years
+830,Native Hawaiian and Other Pacific Islander Alone Male Under 5 years
+802,Native Hawaiian and Other Pacific Islander Alone Male 5 to 9 years
+1012,Native Hawaiian and Other Pacific Islander Alone Male 10 to 14 years
+400,Native Hawaiian and Other Pacific Islander Alone Male 15 to 17 years
+650,Native Hawaiian and Other Pacific Islander Alone Male 18 and 19 years
+1101,Native Hawaiian and Other Pacific Islander Alone Male 20 to 24 years
+1077,Native Hawaiian and Other Pacific Islander Alone Female Under 5 years
+355,Native Hawaiian and Other Pacific Islander Alone Female 5 to 9 years
+893,Native Hawaiian and Other Pacific Islander Alone Female 10 to 14 years
+587,Native Hawaiian and Other Pacific Islander Alone Female 15 to 17 years
+600,Native Hawaiian and Other Pacific Islander Alone Female 18 and 19 years
+1106,Native Hawaiian and Other Pacific Islander Alone Female 20 to 24 years
+62738,Some Other Race Alone Male Under 5 years
+67784,Some Other Race Alone Male 5 to 9 years
+72727,Some Other Race Alone Male 10 to 14 years
+43962,Some Other Race Alone Male 15 to 17 years
+26358,Some Other Race Alone Male 18 and 19 years
+70659,Some Other Race Alone Male 20 to 24 years
+62579,Some Other Race Alone Female Under 5 years
+62778,Some Other Race Alone Female 5 to 9 years
+67897,Some Other Race Alone Female 10 to 14 years
+40481,Some Other Race Alone Female 15 to 17 years
+23090,Some Other Race Alone Female 18 and 19 years
+65137,Some Other Race Alone Female 20 to 24 years
+56101,Two or More Races Male Under 5 years
+50164,Two or More Races Male 5 to 9 years
+46496,Two or More Races Male 10 to 14 years
+24948,Two or More Races Male 15 to 17 years
+14482,Two or More Races Male 18 and 19 years
+30778,Two or More Races Male 20 to 24 years
+52718,Two or More Races Female Under 5 years
+49558,Two or More Races Female 5 to 9 years
+44497,Two or More Races Female 10 to 14 years
+23637,Two or More Races Female 15 to 17 years
+13615,Two or More Races Female 18 and 19 years
+28135,Two or More Races Female 20 to 24 years
+322158,"White Alone, not Hispanic or Latino Male Under 5 years"
+324842,"White Alone, not Hispanic or Latino Male 5 to 9 years"
+338387,"White Alone, not Hispanic or Latino Male 10 to 14 years"
+206751,"White Alone, not Hispanic or Latino Male 15 to 17 years"
+138088,"White Alone, not Hispanic or Latino Male 18 and 19 years"
+360304,"White Alone, not Hispanic or Latino Male 20 to 24 years"
+306079,"White Alone, not Hispanic or Latino Female Under 5 years"
+312258,"White Alone, not Hispanic or Latino Female 5 to 9 years"
+318265,"White Alone, not Hispanic or Latino Female 10 to 14 years"
+197378,"White Alone, not Hispanic or Latino Female 15 to 17 years"
+126527,"White Alone, not Hispanic or Latino Female 18 and 19 years"
+332935,"White Alone, not Hispanic or Latino Female 20 to 24 years"
+507984,Hispanic or Latino Male Under 5 years
+506081,Hispanic or Latino Male 5 to 9 years
+531334,Hispanic or Latino Male 10 to 14 years
+299076,Hispanic or Latino Male 15 to 17 years
+192472,Hispanic or Latino Male 18 and 19 years
+466996,Hispanic or Latino Male 20 to 24 years
+486249,Hispanic or Latino Female Under 5 years
+490633,Hispanic or Latino Female 5 to 9 years
+510367,Hispanic or Latino Female 10 to 14 years
+289797,Hispanic or Latino Female 15 to 17 years
+182494,Hispanic or Latino Female 18 and 19 years
+440333,Hispanic or Latino Female 20 to 24 years

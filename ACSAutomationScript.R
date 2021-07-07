@@ -67,8 +67,8 @@ harris_languages_cleaned <- clean_data(harris_languages_raw, language_labels)
 houston_languages_cleaned <- clean_data(houston_languages_raw, language_labels)
 
 texas_data = rbind(texas_data, texas_languages_cleaned)
-houston_data = rbind(houston_data, harris_languages_cleaned)
-harris_data = rbind(harris_data, houston_languages_cleaned)
+houston_data = rbind(houston_data, houston_languages_cleaned)
+harris_data = rbind(harris_data, harris_languages_cleaned)
 
 print("Loading Opportunity Youth...")
 texas_opp_youth_raw = call_tidycensus("state", "S2301")
@@ -80,8 +80,8 @@ harris_opp_youth_cleaned <- clean_data(harris_opp_youth_raw, opp_youth_labels)
 houston_opp_youth_cleaned <- clean_data(houston_opp_youth_raw, opp_youth_labels)
 
 texas_data = rbind(texas_data, texas_opp_youth_cleaned)
-houston_data = rbind(houston_data, harris_opp_youth_cleaned)
-harris_data = rbind(harris_data, houston_opp_youth_cleaned)
+houston_data = rbind(houston_data, houston_opp_youth_cleaned)
+harris_data = rbind(harris_data, harris_opp_youth_cleaned)
 
 print("Loading  household types...")
 texas_household_data_raw = call_tidycensus("state", "DP02")
@@ -95,8 +95,8 @@ harris_household_type_cleaned <- clean_data(harris_household_data_raw, household
 houston_household_type_cleaned <- clean_data(houston_household_data_raw, household_type_labels, "profile")
 
 texas_data = rbind(texas_data, texas_household_type_cleaned)
-houston_data = rbind(houston_data, harris_household_type_cleaned)
-harris_data = rbind(harris_data, houston_household_type_cleaned)
+harris_data = rbind(harris_data, harris_household_type_cleaned)
+houston_data = rbind(houston_data, houston_household_type_cleaned)
 
 print("Loading Health Care Coverage...")
 texas_health_care_coverage_raw = call_tidycensus("state", "S2701")
@@ -109,8 +109,8 @@ harris_health_care_coverage_cleaned <- clean_data(harris_health_care_coverage_ra
 houston_health_care_coverage_cleaned <- clean_data(houston_health_care_coverage_raw, health_care_coverage_labels)
 
 texas_data = rbind(texas_data, texas_health_care_coverage_cleaned)
-houston_data = rbind(houston_data, harris_health_care_coverage_cleaned)
-harris_data = rbind(harris_data, houston_health_care_coverage_cleaned)
+houston_data = rbind(houston_data, houston_health_care_coverage_cleaned)
+harris_data = rbind(harris_data, harris_health_care_coverage_cleaned)
 
 texas_new_american_children_raw = call_tidycensus("state", "B05009")
 harris_new_american_children_raw = call_tidycensus("county", "B05009") 
@@ -121,8 +121,16 @@ harris_new_american_children_cleaned = combine_values(harris_new_american_childr
 houston_new_american_children_cleaned = combine_values(houston_new_american_children_raw, new_american_children_element_variables, "New American Children")
 
 texas_data = rbind(texas_data, texas_new_american_children_cleaned)
-houston_data = rbind(houston_data, harris_new_american_children_cleaned)
-harris_data = rbind(harris_data, houston_new_american_children_cleaned)
+harris_data = rbind(harris_data, harris_new_american_children_cleaned)
+houston_data = rbind(houston_data, houston_new_american_children_cleaned)
+
+texas_ages_by_race = get_race_by_age_and_sex("state")
+harris_ages_by_race = get_race_by_age_and_sex("county")
+houston_ages_by_race = get_race_by_age_and_sex("city")
+
+texas_data = rbind(texas_data, texas_ages_by_race)
+harris_data = rbind(harris_data, harris_ages_by_race)
+houston_data = rbind(houston_data, houston_ages_by_race)
 
 texas_display_data = texas_data %>%
   select(Estimate, Display_Label)

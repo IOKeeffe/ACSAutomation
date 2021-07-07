@@ -73,6 +73,11 @@ clean_data <- function(data, labels, variable_type = "subject") {
   distinct()
 }
 
+combine_age_and_race <- function(race) {
+  return(race_by_age_labels %>%
+    mutate(display_label = str_glue("{race} {display_label}")))
+}
+
 # the dplyr:collect loads the variables directly into memory, you can remove them if it slows down your machine
 load_data <- function() {
   tidycensus::census_api_key("c26a4b8f1ec3d0bcee44f9e2ffd45a94a5f8c034", install = TRUE, overwrite = TRUE)
